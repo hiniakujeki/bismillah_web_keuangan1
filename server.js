@@ -120,7 +120,7 @@ app.delete('/api/transaksi/:id', auth, (req, res) => {
 
 if (process.env.NODE_ENV !== 'production') {
     app.listen(PORT, () => {
-        console.log(`Server lokal berjalan di http://localhost:${PORT}`);
+        console.log(`Server lokal berjalan di port ${PORT}`);
     });
 }
 module.exports = app;
